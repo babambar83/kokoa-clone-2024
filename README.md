@@ -1,3 +1,4 @@
 # Kokoa Clone 2024 Update
 
-CSS got so much better!
+Git HUB is Fantastic!!!
+HTML / CSS ARE FUN!!

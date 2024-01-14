@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Changwoo Times</title>
+  <style>
+    /* position */
+    body {
+      height: 100vh;
+      margin: 50px;
+    }    
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: wheat;
+      position: relative;
+    }
+    /* (static) default
+       (relative) 처음 있는 위치를 기준으로 옮기는 것
+       (absolute) 가장 가까운 position relative 부모를 기준으로 이동, relative가 없으면 body를 기준으로 이동 
+    */
+    .green {
+      background-color: teal;
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      right: 20px;
+      bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="green"></div>
+  </div>
+</body>
+</html>

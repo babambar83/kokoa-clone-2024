@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Changwoo Times</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 50px;
+    }
+    div {
+      background-color: yellowgreen;
+      padding: 5px;
+      border-radius: 10px;
+    }
+    button:active {
+      background-color: tomato;
+    }
+    button:hover {
+      background-color: teal;
+    }
+    input:focus {
+      background-color: red;
+    }
+    a:visited {
+      color: tomato;
+    }
+    a:hover {
+      color: teal;
+    }
+    a:focus {
+      color: turquoise;
+    }
+    form {
+      border: 1px solid salmon;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    form:focus-within {
+      border-color: seagreen;
+    }
+    form:hover input:focus {
+      background-color: saddlebrown;
+    }
+  </style>
+</head>
+<body>  
+  <div>
+    <button>hello</button>
+    <input type="text" />
+    <input type="text" />
+    <a href="https://apple.com">Go to Apple</a>
+  </div>
+  <form>
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+  </form>
+</body>
+</html>

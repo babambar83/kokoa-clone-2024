@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Changwoo Times</title>
+  <style>
+    /* ① body가 자식을 제어함 (div의 부모는 body)
+       - 자식에게 명시하지 않고 부모에게 명시한다
+       - div의 부모를 display:flex로 만든다 
+       
+       ② main axis(주축), cross axis(교차축)
+       - justify-content : 주축에 적용
+       - align-items : 교차축에 적용
+    */
+    body {
+      /* (vh) viewport(screen) height, 100 screen height는 화면 높이의 100% */
+      height: 95vh;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      /* default value is row */
+      /* main axis becoms vertical */
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    div {
+      width: 250px;
+      height: 250px;
+      background-color: teal;
+    }
+    #second {
+      background-color: wheat;
+    }
+  </style>
+</head>
+<body>
+  <div>1</div>
+  <div id="second"">2</div>
+  <div>3</div>
+</body>
+</html>

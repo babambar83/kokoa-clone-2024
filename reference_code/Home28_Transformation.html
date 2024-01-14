@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Changwoo Times</title>
+  <style>
+    /* Look at transform MDN */
+    img {
+      border: 5px solid black;
+      border-radius: 50%;
+      /* transform: rotateY(70deg) rotateX(20deg) rotateZ(10deg); */
+      /* transform: scale(2,2); */
+      /* transform: translateX(500px); */
+      transition: transform 2s ease-in-out;
+    }
+    img:hover {
+      transform: rotateY(360deg) scale(0.5);
+    }
+  </style>
+</head>
+<body>
+  <img src="img/logo.jpg" />
+  <!-- span은 이미지가 원래 그 자리에 있다고 판단 -->
+  <span>hahahahaha</span>
+</body>
+</html>

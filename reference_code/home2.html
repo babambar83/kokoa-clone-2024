@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <input type="file" accept=".pdf" />
+    <br>
+    <input type="file" accept="image/*" />
+    <br>
+    <input type="file" accept="image/*,.pdf" />
+    <br>
+    <input type="color" />
+    <br>
+    <input required placeholder="Name" type="text" />
+    <br>
+    <input required placeholder="Last Name" type="text" />
+    <br>
+    <input required placeholder="Username" minlength="10" type="text" />
+    <br>
+    <!-- <input placeholder="Username" disabled type="text" /> -->
+    <br>
+    <input required placeholder="Password" type="password" />
+    <br>
+    <input type="submit" value="Create Account" />
+    <br>
+    <!-- <input type="submit" disabled value="Create Account" /> -->
+
+    <!-- Label works together with input -->
+    <!-- for and id should be same -->
+    <!-- Click label links to "input" -->
+    <label for="profile">Profile Photo</label>
+    <input id="profile" type="file" accept=".png,.pdf" />
+
+    <!-- div(박스)는 양옆에 서로 위치할 수 없음 -->
+    <!-- div는 아무런 값도 없는 박스라고 생각하면 됨 -->
+    <div>
+      <!-- Click label links to "input" -->
+      <label for="website">Website</label>
+
+      <!-- id는 body안에 어떤 태그에든 넣을 수 있는 attribute -->
+      <!-- id는 고유한 값 -->
+      <!-- tag당 하나의 id만 가질 수 있음 -->
+      <input id="website" required placedholder="Name" type="url" />
+    </div> 
+    <div>
+      <input type="range" />
+      <input type="date" /> 
+    </div>
+  </form>    
+</body>
+</html>

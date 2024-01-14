@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olaylist</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Russo+One&display=swap');
+    :root {
+      --font-sans: 'Open Sans', sans-serif;
+      --font-russo: 'Russo One', sans-serif;
+    }
+    body {
+      width: 380px;
+      height: 760px;
+      border: 4px solid #02c7ae;
+      display: flex;      
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .status-bar {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .status-bar__column {
+      width: 33%;
+    }
+    .status-bar__column:first-child {
+      display: flex;
+      align-items: center;
+    }
+    .status-bar__column:nth-child(2) {
+      font-family: var(--font-sans);
+      font-size: 25px;
+      font-weight: 800;
+      display: flex;
+      justify-content: center;
+    }
+    .status-bar__column:last-child {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .music-title {
+      display: flex;
+      justify-content: center;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .music-title__column {
+      width: 50%;
+    }
+    .music-title__column:first-child div {
+      width: 120px;
+      height: 120px;
+      background-color: #ffbd11;
+      border: 2px solid black;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .music-title__column:last-child {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .music-title__column:last-child div:first-child {
+      font-family: var(--font-russo);
+      font-size: 35px;
+      font-weight: 600;
+    }
+    .music-title__column:last-child div:last-child {
+      font-family: var(--font-sans);
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .play-icons {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .play-icons__column:first-child div {
+      width: 140px;
+      height: 60px;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .play-icons__column:first-child div span {
+      font-family: var(--font-sans);
+      font-size: 25px;
+      font-weight: 700;
+      margin-left: 5px;
+    }
+    .play-icons__column:nth-child(2) div,
+    .play-icons__column:last-child div {
+      width: 60px;
+      height: 60px;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Status-Bar -->
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <i class="fas fa-times fa-2xl"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>Playlist</span>
+    </div>
+    <div class="status-bar__column"></div>
+  </div>
+  <!-- Title -->
+  <div class="music-title">
+    <div class="music-title__column">
+      <div>
+        <i class="far fa-file-image fa-3x" style="color:white"></i>
+      </div>
+    </div>
+    <div class="music-title__column">
+      <div>
+        <span>Random Love</span>
+      </div>
+      <div>
+        <span>by Divay Kapoor</span>
+      </div>
+    </div>
+  </div>
+  <!-- Play-Icons -->
+  <div class="play-icons">
+    <div class="play-icons__column">
+      <div>
+        <i class="fa-solid fa-play fa-2x"></i>
+        <span>Play</span>
+      </div>
+    </div>
+    <div class="play-icons__column">
+      <div>
+        <i class="fa-regular fa-heart fa-2x"></i>
+      </div>
+    </div>
+    <div class="play-icons__column">
+      <div>
+        <i class="fas fa-plus fa-2x"></i>
+      </div>
+    </div>
+  </div>
+  <!-- Play-List -->
+  <div>
+    <ul>
+      <li>Matargasti</li>
+      <li>Attitude</li>
+      <li>Try Everything</li>
+      <li>Sunflower</li>
+    </ul>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a7af4529b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

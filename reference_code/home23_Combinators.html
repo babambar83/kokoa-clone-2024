@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Changwoo Times</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 50px;
+    }
+    span {
+      background-color: yellowgreen;
+      padding: 5px;
+      border-radius: 10px;
+    }
+    p span {
+      color: white;
+    }
+    /* ①  div span : all children
+       ②  div > span : direct children
+       ③  p + span : next to p */
+       
+    /* div > span {
+      text-decoration: underline;
+    }
+    p + span {
+      text-decoration: underline;
+    } */
+  </style>
+</head>
+<body>  
+  <div>
+    <span>hello</span>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>inside</span>
+    </p>
+    <span>hello</span>
+  </div>
+</body>
+</html>

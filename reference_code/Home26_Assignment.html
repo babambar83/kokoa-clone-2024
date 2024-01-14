@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Best Colors</title>
+  <style>
+    :root {
+      /* Variables */
+      /* CSS custom properties */
+      --main-color: RGB(255, 250 ,245); 
+      --firstbox-color: #FF6347;
+      --secondbox-color: #008080;
+      --thirdbox-color: #DEB887;
+      --fourthbox-color: #D7BFD7;
+      --boxborder-style: 8px solid white;
+    }
+    body {
+      height: 100vh;
+      background-color: var(--main-color);
+      display: flex;
+      justify-content: center;
+    }
+    body > div {
+      width: 50vh;
+      height: 100vh;
+    }
+    /* Title */
+    body > div > div:nth-child(1) {
+      height: 12vh;
+      text-align: center;
+    }
+    /* 4 boxses */
+    body > div > div:nth-child(2) {
+      height: 76vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    /* Empty Space */
+    body > div > div:nth-child(3) {
+      height: 12vh;
+    }
+    /* 4 boxses Spec */
+    .boxes {
+      height: 36vh;
+      display: flex;
+      justify-content: space-between;
+    }
+    #box1 > div:nth-child(1) {
+      width: 23vh;
+      background-color: var(--firstbox-color);
+      border: var(--boxborder-style);
+      position: relative;
+    }    
+    #box1 > div:nth-child(2) {
+      width: 23vh;
+      background-color: var(--secondbox-color);
+      border: var(--boxborder-style);
+      position: relative;
+    }
+    #box2 > div:nth-child(1) {
+      width: 23vh;
+      background-color: var(--thirdbox-color);
+      border: var(--boxborder-style);
+      position: relative;
+    }
+    #box2 > div:nth-child(2) {
+      width: 23vh;
+      background-color: var(--fourthbox-color);
+      border: var(--boxborder-style);
+      position: relative;
+    }
+    #box1 > div div,
+    #box2 > div div {
+      width: 23vh;
+      height: 13vh;
+      position: absolute;
+      top: 2vh;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div><h1>The Best Colors</h1></div>
+    <div>
+      <div class="boxes" id="box1">
+        <div>
+          <div>
+            <p><h3>&nbsp;Tomato</h3></p>
+            <p><h4>&nbsp;#FF6347</h4></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><h3>&nbsp;Teal</h3></p>
+            <p><h4>&nbsp;#008080</h4></p>
+          </div>
+        </div>
+      </div>
+      <div class="boxes" id="box2">
+        <div>
+          <div>
+            <p><h3>&nbsp;Burlywood</h3></p>
+            <p><h4>&nbsp;#DEB887</h4></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><h3>&nbsp;Thistle</h3></p>
+            <p><h4>&nbsp;#D7BFD7</h4></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+</body>
+</html>

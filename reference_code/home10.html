@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Changwoo Times</title>
+  <style>
+    /* 너비, 스타일, 색깔 */
+    * {
+      border: 1px dashed black;
+    }
+    html {
+      background-color: tomato;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: thistle;
+    }
+
+    /* block의 특징(3가지) */
+    /* margin, padding, border */
+    /* (margin) box의 border 바깥에 있는 공간 */
+    /* (padding) margin의 반대개념 */
+    /* (border) 경계, ugly, 한가지만 쓰게될 것  */
+    div { 
+      padding: 20px;
+    }
+    #first {
+      background-color: whitesmoke;
+      width: 150px;
+      height: 150px;
+    }
+    #second {
+      background-color: teal;
+      width: 100px;
+      height: 100px;
+    }
+    #third {
+      background-color: wheat;
+      width: 50px;
+      height: 50px;
+    }
+
+    /* border는 inline에도 적용됨 */
+    span {
+      border-style: dotted;
+    }
+  </style>
+</head>
+<body>
+  <div id="first">
+    <div id="second">
+      <div id="third">
+          <span>hello</span>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>

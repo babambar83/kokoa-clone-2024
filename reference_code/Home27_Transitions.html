@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Changwoo Times</title>
+  <style>
+    a {
+      color: wheat;
+      background-color: tomato;
+      text-decoration: none;
+      padding: 3px 5px;
+      border-radius: 5px;
+      font-size: 50px;
+
+      /* 무엇을, 얼마나, 어떻게 */
+      /* transition: background-color 10s ease-in-out, color 5s ease-in-out; */
+
+      /* 변화하는 것 모두 */
+      /* transition: all 1s ease-in-out; */
+
+      /*  https://matthewlein.com/tools/ceaser */
+      transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860)
+    }
+    a:hover {
+      border-radius: 20px;
+      color: tomato;
+      background-color: wheat;
+    }
+  </style>
+</head>
+<body>
+  <a href="#">Go home</a>
+</body>
+</html>

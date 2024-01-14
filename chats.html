@@ -1,0 +1,106 @@
+<head>
+  <!-- link:css -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pocketmon Trainer - Kokoa Clone</title>
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>Pocketmon</span>
+      <i class="fas fa-wifi"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>23:15</span>
+    </div>
+    <div class="status-bar__column">
+      <span>100%</span>
+      <i class="fas fa-battery-full fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </div>
+
+  <header class="screen-header">
+    <h1 class="screen-header__title">Pocketmon Trainer</h1>
+    <div class="screen-header__icons">
+      <span><i class="fas fa-search fa-lg"></i></span>
+      <span><i class="far fa-comment-dots fa-lg"></i></span>
+      <span><i class="fas fa-music fa-lg"></i></span>
+      <span><i class="fas fa-cog fa-lg"></i></span>
+    </div>
+  </header>
+  
+  <main class="main-screen">
+    <div class="user-component">
+        <div class="user-component__column">
+          <img src="img/pikachu.png" class="user-component__avatar "/>
+          <div class="user-component__text">
+            <h4 class="user-component__title">pickachu</h4>
+            <h6 class="user-component__subtitle">Good Morning, Jiwoo! Plz Call me, ASAP</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">21:22</span>
+          <div class="badge">1</div>
+        </div>
+    </div>
+
+    <div class="user-component">
+      <div class="user-component__column">
+        <img src="img/kkobugi.jpg" class="user-component__avatar "/>
+        <div class="user-component__text">
+          <h4 class="user-component__title">kkobugi</h4>
+          <h6 class="user-component__subtitle">Jiwoo, have you seen pickachu?</h6>
+        </div>
+      </div>
+      <div class="user-component__column">
+        <span class="user-component__time">22:25</span>
+        <div class="badge">3</div>
+      </div>
+    </div>
+    <div class="user-component">
+      <div class="user-component__column">
+        <img src="img/isanghaessi.png" class="user-component__avatar "/>
+        <div class="user-component__text">
+          <h4 class="user-component__title">isanghaessi</h4>
+          <h6 class="user-component__subtitle">Jiwoo, I wanna upgrade to isanghaepul.</h6>
+        </div>
+      </div>
+      <div class="user-component__column">
+        <span class="user-component__time">23:00</span>
+        <div class="badge">2</div>
+      </div>
+    </div>
+    
+    </main>
+
+  <!-- shortcut nav>ul>li*4 -->
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__btn">
+        <a class="nav__link" href="friends.html">          
+          <i class="far fa-user fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="chats.html">
+          <span class="nav__notification badge">1</span>
+          <i class="fas fa-comment fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+      </li>
+      <li class="nav__btn">       
+        <a class="nav__link" href="more.html">
+          <span class="nav__notification badge badge--sm"></span>
+          <i class="fas fa-ellipsis-h fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="https://kit.fontawesome.com/a7af4529b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

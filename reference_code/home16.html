@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Changwoo Times</title>
+  <style>
+    /* ① body가 자식을 제어함 (div의 부모는 body)
+       - 자식에게 명시하지 않고 부모에게 명시한다
+       - div의 부모를 display:flex로 만든다 
+       
+       ② main axis(주축), cross axis(교차축)
+       - justify-content : 주축에 적용
+       - align-items : 교차축에 적용
+    */
+    body {
+      height: 95vh;
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+      flex-direction: row;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      font-size:28px;
+      color: white;
+      background-color: teal;
+    }
+    #second {
+      background-color: wheat;
+    }
+  </style>
+</head>
+<body>
+  <div>1</div>
+  <div id="second"">2</div>
+  <div>3</div>
+</body>
+</html>

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@import "reset.css";
+@import "iVariables.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--font-color);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f4f3f5;
+}
+
+.main {
+  width: 380px;
+  min-height: 80vh;
+  background-color: #ffffff;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 55px 30px 0px 30px;
+  box-sizing: border-box;
+}
+
+.music-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.music-title__illustration--md {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+}
+
+.music-title__illustration--xs {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.music-image {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.music-title__illustration--xl {
+  width: 280px;
+  height: 280px;
+  border-radius: 30px;
+}
+
+.music-title__musician {
+  margin-top: 25px;
+  font-size: var(--font-xl-size);
+  font-weight: var(--font-xl-weight);
+  color: var(--font-xl-color);
+}
+
+.music-title__genre {
+  margin-top: 10px;
+  font-size: var(--font-xs-size);
+  font-weight: var(--font-xs-weight);
+  color: var(--font-xs-color);
+}
+
+.music-info {
+  margin: 30px 0px;
+}
+
+.music-info__list {
+  display: flex;
+  justify-content: center;
+}
+
+.music-info__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 45px;
+  background-color: var(--button-color);
+  border-radius: 30px;
+  color: var(--font-xs-color);
+}
+
+.music-info__btn:last-child {
+  margin-left: 15px;
+  background-color: #f2f2f2;
+  color: var(--font-color);
+}
+
+.music-info__fav {
+  margin-left: 8px;
+  color: var(--font-xs-color);
+}
+
+.music-list {
+  margin: 0px 30px; 
+}
+
+.music-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.music-component:nth-child(2) {
+  background-color: rgb(228, 228, 228);
+}
+
+.music-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.music-component__text {
+  margin-left: 20px;
+}
+
+.music-component__author {
+  font-size: var(--font-xs-size);
+  color: var(--font-xs-color);
+  font-weight: var(--font-xs-weight);
+}
+
+.music-component__title {
+  font-size: var(--font-md-size);
+  color: var(--font-md-color);
+  font-weight: var(--font-md-weight);
+  margin-top: 7px;
+}
+
+.music-playing {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  background-color: var(--button-color);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.music-playing > .music-playing__column:first-child {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.music-playing > .music-playing__column:nth-child(2),
+.music-playing > .music-playing__column:nth-child(3) {
+  color: white;
+}
+
+.music-playing > .music-playing__column:last-child {
+  margin-right: 10px;
+  color: white;
+}
+
+.music-titleauthor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.music-playing__author {
+  font-size: var(--font-xs-size);
+  color: var(--font-xs-color);
+  font-weight: var(--font-xs-weight);
+}
+
+.music-playing__title {
+  font-size: var(--font-md-size);
+  color: var(--font-xs-color);
+  font-weight: var(--font-xs-weight);
+  margin-top: 5px;
+}
+
+.music-playing__column {
+  color: var(--font-xs-color);
+}
+
+.music-progress {  
+  margin: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.music-progress__entire {
+  position: absolute;
+  width: 330px;
+  height: 3px;
+  background-color: #d5d5d5;
+} 
+
+.music-progress__progress {
+  position: absolute;
+  width: 220px;
+  height: 3px;
+  background-color: var(--button-color);
+}
+
+.music-progress__time {
+  display: flex;
+  justify-content: space-between;
+  color: var(--font-xs-color);
+  margin-top: 10px;
+}

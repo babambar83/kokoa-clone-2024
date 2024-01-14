@@ -1,0 +1,53 @@
+<!-- First rule-->
+<!DOCTYPE html>
+
+<!-- Second rule -->
+<!-- (lang attribute) 검색엔진에게 주로 사용하는 언어가 무엇인지 말해줌 -->
+<html lang="kr">
+  <!-- head and body -->
+  <!-- (head) 웹사이트 페이지 환경 설정 (invisible)-->
+  <head>
+    <link 
+      rel="shortcut icon" 
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <title>Home - My first website</title>
+    <!-- (meta) extra data -->
+    <!-- to tell the browser how to render text -->
+    <meta charset="utf-8" />
+
+    <!-- meta name description : 구글에서 활용-->
+    <meta name="description" content="This is my website" />
+
+    <!-- 카카오톡은 og:title, og:description, og:image를 찾아서 메세지를 출력해줌 -->
+    <meta property="og:title" content="노마드 코더 Nomad Coders">
+    <meta property="og:description" content="코딩은 진짜를 만들어보는거야!. 실제 구현되어 있는 서비스를 한땀 한땀 따라 만들면서 코딩을 배우세요!">
+    <meta property="og:image" content="https://d1telmomo28umc.cloudfront.net/media/seo/home2.jpg">
+
+
+  </head>
+  <!-- (body) content (visible)-->
+  <body>
+    <h1>Hello, This is my website</h1>
+    <a href="http://google.com" target="_blank">Go to goole.com</a>
+    <img src="img/logo.jpg" />
+
+    <p>lalalalalalala</p>
+    <pre>lalalalalalala</pre>
+    <p>My name is <abbr title="Changwoo"> Changwoo </abbr></p>
+    <cite>Hello!</cite>
+    <p>I like to live in <mark><strong>South Korea</strong></mark></p>
+    <p>2<sup>5</sup></p> 
+    <!-- 크롬에서는 audio autoplay를 정책적으로 block -->
+    <audio
+      controls="enabled"
+      autoplay="enabled"
+      src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+    >
+    </audio>
+    <dialog open>
+      <p>Greetings, one and all!</p>
+    </dialog>
+  </body>
+</html>

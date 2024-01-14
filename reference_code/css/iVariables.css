@@ -1,0 +1,13 @@
+:root {
+  --button-color: #222222;
+  --font-color: #222222;
+  --font-xl-color: #2e363e;
+  --font-xl-size: 33px;
+  --font-xl-weight: 700;
+  --font-xs-color: #aeaeae;
+  --font-xs-size: 15px;
+  --font-xs-weight: 600;
+  --font-md-color: #2e363e;
+  --font-md-size: 20px;
+  --font-md-weight: 700;
+}
